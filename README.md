@@ -1,0 +1,1 @@
+# Softserve Magento Frontend training 2020
