@@ -1,0 +1,8 @@
+          ok  Starting native_osx for sync magento-sync
+          ok  magento-sync container still running, restarting unison in container
+     command  docker exec magento-sync supervisorctl restart unison
+unison: stopped
+unison: started
+          ok  starting initial sync of magento-sync
+     success  Sync container started
+     success  Showing unison logs from your sync container: magento-sync

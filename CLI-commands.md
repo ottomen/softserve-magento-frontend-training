@@ -28,7 +28,7 @@ bin/magento deploy:mode:show
 ```
 Set mode:
 ```
-bin/magento deploy:mode:set {production/development/default}
+bin/magento deploy:mode:set {production/developer/default}
 ```
 Doc for modes commands: [link](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html)
 

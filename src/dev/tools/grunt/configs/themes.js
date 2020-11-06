@@ -41,6 +41,26 @@ module.exports = {
         ],
         dsl: 'less'
     },
+    default: {
+        area: 'frontend',
+        name: 'SoftServe/default',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
+    second: {
+        area: 'frontend',
+        name: 'SoftServe/second',
+        locale: 'en_US',
+        files: [
+            'css/styles-m',
+            'css/styles-l'
+        ],
+        dsl: 'less'
+    },
     backend: {
         area: 'adminhtml',
         name: 'Magento/backend',

@@ -1,0 +1,11 @@
+# mandatory since 0.2.x
+version: "2"
+syncs:
+  magento-sync:
+    src: './src/app'
+    sync_excludes:
+      - '.git'
+      - '.idea'
+      - '.magento'
+      - '.docker'
+      - '.github'
