@@ -11,6 +11,14 @@ Clear cache.
 bin/magento c:c
 ```
 
+Remove the files from the pub/static folder: 
+```
+rm -rf pub/static/*
+```
+Remove the files from the var/view_preprocessed folder: 
+```
+rm -rf var/view_preprocessed/*
+```
 Summary of available caching commands.
 
 ```

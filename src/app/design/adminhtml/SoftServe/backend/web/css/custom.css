@@ -1,0 +1,5 @@
+body .menu-wrapper:before,
+body .page-main-actions:not(._hidden),
+body .page-actions._fixed {
+    background-color: #131313;
+}

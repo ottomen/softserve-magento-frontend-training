@@ -70,5 +70,16 @@ module.exports = {
             'css/styles'
         ],
         dsl: 'less'
+    },
+    backenddefault: {
+        area: 'adminhtml',
+        name: 'SoftServe/backend',
+        locale: 'en_US',
+        files: [
+            'css/styles-old',
+            'css/styles',
+            'css/extends',
+        ],
+        dsl: 'less'
     }
 };
