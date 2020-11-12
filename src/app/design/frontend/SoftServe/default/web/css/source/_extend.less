@@ -1,4 +1,9 @@
-.lib-font-face(
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+    .lib-font-face(
     @family-name:"Montserrat",
     @font-path: "@{baseDir}fonts/Montserrat-Regular",
     @font-weight: 400,
@@ -6,7 +11,7 @@
     @font-display: swap
 );
 
-.lib-font-face(
+    .lib-font-face(
     @family-name:"Montserrat",
     @font-path: "@{baseDir}fonts/Montserrat-Bold",
     @font-weight: bold,
@@ -14,6 +19,13 @@
     @font-display: swap
 );
 
-body {
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    body {
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial,
+            sans-serif;
+    }
+
+    .logo img {
+        width: 35px;
+        height: 35px;
+    }
 }

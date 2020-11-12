@@ -3,9 +3,10 @@
         <referenceBlock name="logo">
             <arguments>
                 <argument name="logo_file" xsi:type="string">images/ss.png</argument>
-                <argument name="logo_img_width" xsi:type="number">35</argument> 
+                <argument name="logo_img_width" xsi:type="number">35</argument>
                 <argument name="logo_img_height" xsi:type="number">35</argument>
             </arguments>
-        </referenceBlock> 
+        </referenceBlock>
+        <move element="logo" destination="header.panel" before="-"/>
     </body>
 </page>
