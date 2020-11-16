@@ -7,6 +7,14 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="page.wrapper" htmlClass="page-wrapper weekend-sales" />
+        <attribute name="class" value="weekend-sales"/>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Product\View\Attributes" name="product.shipping.policy" as="shipping" template="Magento_Catalog::product/view/shipping-policy.phtml" group="detailed_info">
+                <arguments>
+                    <argument name="title" translate="true" xsi:type="string">Shipping Policy</argument>
+                    <argument name="sort_order" xsi:type="string">230</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>

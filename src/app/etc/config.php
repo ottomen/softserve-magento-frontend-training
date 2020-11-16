@@ -297,6 +297,7 @@ return [
         'PayPal_BraintreeGraphQl' => 1,
         'SoftServe_Backend' => 1,
         'Temando_ShippingRemover' => 1,
+        'Training_Rate' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,
         'Yotpo_Yotpo' => 1
