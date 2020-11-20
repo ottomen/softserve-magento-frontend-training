@@ -1,10 +1,11 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceBlock name="catalog.topnav">
-            <block class="Magento\Framework\View\Element\Html\Link" name="cart" before="account">
+            <block class="Magento\Framework\View\Element\Html\Link" name="best.products" before="account">
                 <arguments>
                     <argument name="label" xsi:type="string">Best products</argument>
                     <argument name="path" xsi:type="string">best-products</argument>
+                    <argument name="class" xsi:type="string" translate="false">ui-menu-item</argument>
                 </arguments>
             </block>
         </referenceBlock>

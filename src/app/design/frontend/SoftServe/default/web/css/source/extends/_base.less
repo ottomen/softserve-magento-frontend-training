@@ -6,6 +6,7 @@
     .lib-font-face(
         @family-name:"Montserrat",
         @font-path: "@{baseDir}fonts/Montserrat-Regular",
+        @font-format:"<ttf>",
         @font-weight: 400,
         @font-style: normal,
         @font-display: swap
@@ -14,6 +15,7 @@
     .lib-font-face(
         @family-name:"Montserrat",
         @font-path: "@{baseDir}fonts/Montserrat-Bold",
+        @font-format:"<ttf>",
         @font-weight: bold,
         @font-style: normal,
         @font-display: swap
@@ -29,7 +31,7 @@
         height: 35px;
     }
 
-    .navigation .ui-menu-item {
+    .navigation > ul > li {
         display: inline-block;
     }
 }
