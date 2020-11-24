@@ -9,5 +9,4 @@ var config = {
             star_rating: "Training_Rate/js/star-rating",
         },
     },
-    config: {},
 };
