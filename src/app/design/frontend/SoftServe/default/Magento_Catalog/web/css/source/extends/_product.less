@@ -7,4 +7,28 @@
         color: red;
         font-style: italic;
     }
+
+    .field.qty .control * {
+        user-select: none;
+    }
+
+    .control__btn {
+        width: 25px;
+        height: 32px;
+        background: #f2f2f2;
+        padding: 0 5px;
+        border: 1px solid #ddd;
+        line-height: 32px;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        vertical-align: middle;
+        box-sizing: border-box;
+        user-select: none;
+    }
+
+    .control__btn + input {
+        vertical-align: middle;
+        user-select: none;
+    }
 }

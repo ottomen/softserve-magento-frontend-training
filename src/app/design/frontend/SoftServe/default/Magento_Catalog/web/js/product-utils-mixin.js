@@ -28,8 +28,6 @@ define(["mage/utils/wrapper"], function (wrapper) {
                     r,
                     am;
 
-                console.log("product-utils-mixin", amount, format, isShowSign);
-
                 format = _.extend(globalPriceFormat, format);
 
                 // copied from price-option.js | Could be refactored with varien/js.js
