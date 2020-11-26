@@ -1,0 +1,277 @@
+{
+    "displayArea": "additional-fieldsets",
+    "children": {
+      "region": {
+        "visible": false
+      },
+      "region_id": {
+        "component": "Magento_Ui/js/form/element/region",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/select",
+          "customEntry": "shippingAddress.region"
+        },
+        "dataScope": "shippingAddress.region_id",
+        "label": "State/Province",
+        "provider": "checkoutProvider",
+        "sortOrder": "90",
+        "validation": {
+          "required-entry": true
+        },
+        "filterBy": {
+          "target": "${ $.provider }:${ $.parentScope }.country_id",
+          "field": "country_id"
+        },
+        "customEntry": null,
+        "visible": true,
+        "deps": [
+          "checkoutProvider"
+        ],
+        "imports": {
+          "initialOptions": "index = checkoutProvider:dictionaries.region_id",
+          "setOptions": "index = checkoutProvider:dictionaries.region_id"
+        }
+      },
+      "postcode": {
+        "component": "Magento_Ui/js/form/element/post-code",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/input"
+        },
+        "dataScope": "shippingAddress.postcode",
+        "label": "Zip/Postal Code",
+        "provider": "checkoutProvider",
+        "sortOrder": "110",
+        "validation": {
+          "required-entry": true
+        },
+        "options": [],
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true
+      },
+      "company": {
+        "component": "Magento_Ui/js/form/element/abstract",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/input"
+        },
+        "dataScope": "shippingAddress.company",
+        "label": "Company",
+        "provider": "checkoutProvider",
+        "sortOrder": "60",
+        "validation": {
+          "max_text_length": 255,
+          "min_text_length": "0"
+        },
+        "options": [],
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true
+      },
+      "fax": {
+        "validation": {
+          "min_text_length": "0"
+        }
+      },
+      "telephone": {
+        "component": "Magento_Ui/js/form/element/abstract",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/input",
+          "tooltip": {
+            "description": "For delivery questions."
+          }
+        },
+        "dataScope": "shippingAddress.telephone",
+        "label": "Phone Number",
+        "provider": "checkoutProvider",
+        "sortOrder": "120",
+        "validation": {
+          "required-entry": true,
+          "max_text_length": 255,
+          "min_text_length": 1
+        },
+        "options": [],
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true
+      },
+      "inline-form-manipulator": {
+        "component": "Amazon_Payment/js/view/shipping-address/inline-form"
+      },
+      "comments": {
+        "component": "Magento_Ui/js/form/element/abstract",
+        "validation": {
+          "max_text_length": "255"
+        },
+        "config": {
+          "provider": "checkoutProvider",
+          "dataScope": "shippingAddress.comments",
+          "label": "Order comments (255 symbols max)",
+          "deps": [
+            "checkoutProvider"
+          ],
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/textarea"
+        }
+      },
+      "firstname": {
+        "component": "Magento_Ui/js/form/element/abstract",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/input"
+        },
+        "dataScope": "shippingAddress.firstname",
+        "label": "First Name",
+        "provider": "checkoutProvider",
+        "sortOrder": "20",
+        "validation": {
+          "required-entry": true,
+          "max_text_length": 255,
+          "min_text_length": 1
+        },
+        "options": [],
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true
+      },
+      "lastname": {
+        "component": "Magento_Ui/js/form/element/abstract",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/input"
+        },
+        "dataScope": "shippingAddress.lastname",
+        "label": "Last Name",
+        "provider": "checkoutProvider",
+        "sortOrder": "40",
+        "validation": {
+          "required-entry": true,
+          "max_text_length": 255,
+          "min_text_length": 1
+        },
+        "options": [],
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true
+      },
+      "street": {
+        "component": "Magento_Ui/js/form/components/group",
+        "label": "Street Address",
+        "required": true,
+        "dataScope": "shippingAddress.street",
+        "provider": "checkoutProvider",
+        "sortOrder": "70",
+        "type": "group",
+        "config": {
+          "template": "ui/group/group",
+          "additionalClasses": "street"
+        },
+        "children": [
+          {
+            "label": "Street Address: Line 1",
+            "component": "Magento_Ui/js/form/element/abstract",
+            "config": {
+              "customScope": "shippingAddress",
+              "template": "ui/form/field",
+              "elementTmpl": "ui/form/element/input"
+            },
+            "dataScope": 0,
+            "provider": "checkoutProvider",
+            "validation": {
+              "required-entry": true,
+              "max_text_length": 255,
+              "min_text_length": 1
+            },
+            "additionalClasses": "field"
+          },
+          {
+            "label": "Street Address: Line 2",
+            "component": "Magento_Ui/js/form/element/abstract",
+            "config": {
+              "customScope": "shippingAddress",
+              "template": "ui/form/field",
+              "elementTmpl": "ui/form/element/input"
+            },
+            "dataScope": 1,
+            "provider": "checkoutProvider",
+            "validation": {
+              "max_text_length": 255,
+              "min_text_length": 1
+            },
+            "additionalClasses": "additional"
+          },
+          {
+            "label": "Street Address: Line 3",
+            "component": "Magento_Ui/js/form/element/abstract",
+            "config": {
+              "customScope": "shippingAddress",
+              "template": "ui/form/field",
+              "elementTmpl": "ui/form/element/input"
+            },
+            "dataScope": 2,
+            "provider": "checkoutProvider",
+            "validation": {
+              "max_text_length": 255,
+              "min_text_length": 1
+            },
+            "additionalClasses": "additional"
+          }
+        ]
+      },
+      "country_id": {
+        "component": "Magento_Ui/js/form/element/select",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/select"
+        },
+        "dataScope": "shippingAddress.country_id",
+        "label": "Country",
+        "provider": "checkoutProvider",
+        "sortOrder": "80",
+        "validation": {
+          "required-entry": true
+        },
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true,
+        "deps": [
+          "checkoutProvider"
+        ],
+        "imports": {
+          "initialOptions": "index = checkoutProvider:dictionaries.country_id",
+          "setOptions": "index = checkoutProvider:dictionaries.country_id"
+        },
+        "value": "US"
+      },
+      "city": {
+        "component": "Magento_Ui/js/form/element/abstract",
+        "config": {
+          "customScope": "shippingAddress",
+          "template": "ui/form/field",
+          "elementTmpl": "ui/form/element/input"
+        },
+        "dataScope": "shippingAddress.city",
+        "label": "City",
+        "provider": "checkoutProvider",
+        "sortOrder": "100",
+        "validation": {
+          "required-entry": true,
+          "max_text_length": 255,
+          "min_text_length": 1
+        },
+        "options": [],
+        "filterBy": null,
+        "customEntry": null,
+        "visible": true
+      }
+    }
+  }
