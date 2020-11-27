@@ -106,9 +106,6 @@
       },
       "comments": {
         "component": "Magento_Ui/js/form/element/abstract",
-        "validation": {
-          "max_text_length": "255"
-        },
         "config": {
           "provider": "checkoutProvider",
           "dataScope": "shippingAddress.comments",
@@ -131,11 +128,6 @@
         "label": "First Name",
         "provider": "checkoutProvider",
         "sortOrder": "20",
-        "validation": {
-          "required-entry": true,
-          "max_text_length": 255,
-          "min_text_length": 1
-        },
         "options": [],
         "filterBy": null,
         "customEntry": null,

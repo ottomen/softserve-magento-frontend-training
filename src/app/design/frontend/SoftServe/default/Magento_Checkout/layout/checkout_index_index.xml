@@ -24,19 +24,18 @@
                                                             <item name="children" xsi:type="array">
                                                                 <item name="comments" xsi:type="array">
                                                                     <item name="component" xsi:type="string">Magento_Ui/js/form/element/abstract</item>
-                                                                    <item name="validation" xsi:type="array">
-                                                                        <item name="max_text_length" xsi:type="number">255</item>
-                                                                    </item>
                                                                     <item name="config" xsi:type="array">
-                                                                        <item name="provider" xsi:type="string">checkoutProvider</item>
-                                                                        <item name="dataScope" xsi:type="string">shippingAddress.comments</item>
-                                                                        <item name="customScope" xsi:type="string">shippingAddress.comments</item>
-                                                                        <item name="label" translate="true" xsi:type="string">Order comments (255 symbols max)</item>
-                                                                        <item name="deps" xsi:type="array">
-                                                                            <item name="0" xsi:type="string">checkoutProvider</item>
-                                                                        </item>
+                                                                        <item name="customScope" xsi:type="string">shippingAddress</item>
                                                                         <item name="template" xsi:type="string">ui/form/field</item>
                                                                         <item name="elementTmpl" xsi:type="string">ui/form/element/textarea</item>
+                                                                        <item name="cols" xsi:type="string">20</item>
+                                                                        <item name="rows" xsi:type="string">5</item>
+                                                                    </item>
+                                                                    <item name="provider" xsi:type="string">checkoutProvider</item>
+                                                                    <item name="label" translate="true" xsi:type="string">Order comments (255 symbols max)</item>
+                                                                    <item name="dataScope" xsi:type="string">shippingAddress.comments</item>
+                                                                    <item name="validation" xsi:type="array">
+                                                                        <item name="max_text_length" xsi:type="number">255</item>
                                                                     </item>
                                                                 </item>
                                                             </item>
