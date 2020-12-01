@@ -4,8 +4,6 @@
     <referenceContainer name="footer-container" remove="true" />
     <referenceContainer name="columns">
         <referenceContainer name="main">
-            <block class="Magento\Framework\View\Element\Template" name="best.products.group" template="Magento_Catalog::best-products.phtml">
-            </block>
             <block class="Magento\Cms\Block\Block" name="products-list-block">
                 <arguments>
                     <argument name="block_id" xsi:type="string">products-list-block</argument>
