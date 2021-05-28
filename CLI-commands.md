@@ -102,6 +102,7 @@ Doc for JavaScript Bundling commands: [link](https://devdocs.magento.com/guides/
 
 ### Docker
 
+```
 docker-compose run --rm deploy
 
 ls -la
@@ -111,6 +112,7 @@ docker cp $(pwd) volcon-local_fpm_1:/app/
 docker exec -ti volcon-local_fpm_1 bash
 
 mv volcon-local/* ./
+```
 
 ### Mailhog 
 
@@ -119,6 +121,7 @@ http://magento2.docker:8025
 
 ### DB
 
+```
 mysql --host db -u magento2 -pmagento2 magento2
 
 SELECT VERSION();
@@ -131,8 +134,11 @@ SHOW COLUMNS FROM patch_list;
 SELECT * FROM patch_list;
 
 DELETE FROM patch_list WHERE patch_id = 760;
+```
 
 ### Dump
 
+```
 docker-compose run --rm deploy mysqldump --host db -u magento2 -pmagento2 magento2 catalog_product_entity_text > text.sql 
 docker-compose run --rm deploy mysqldump --host db -u magento2 -pmagento2 magento2 catalog_eav_attribute > attr.sql
+```
